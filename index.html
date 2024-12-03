@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Pro EXIF Bilgi Okuyucu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upload-section">
+            <input type="file" id="imageInput" class="file-input" accept="image/*">
+            <label for="imageInput" class="file-label">
+                <img src="download.png" alt="Upload">
+                Resim Yükle
+            </label>
+        </div>
+        <table id="exifTable" style="display:none;">
+            <thead>
+                <tr>
+                    <th>Özellik</th>
+                    <th>Değer</th>
+                </tr>
+            </thead>
+            <tbody id="exifData"></tbody>
+        </table>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
